@@ -4,9 +4,11 @@ import com.example.weather.interfaces.GeocodingClient;
 import com.example.weather.model.request.Coordinates;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+@Service
 public class NominatimGeocodingClient implements GeocodingClient {
     private final RestTemplate restTemplate = new RestTemplate();
 

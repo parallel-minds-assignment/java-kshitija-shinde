@@ -3,9 +3,11 @@ package com.example.weather.clients;
 import com.example.weather.interfaces.WeatherClient;
 import com.example.weather.model.response.WeatherResponse;
 import org.json.JSONObject;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+@Service
 public class OpenMeteoWeatherClient implements WeatherClient {
     private final RestTemplate restTemplate = new RestTemplate();
 

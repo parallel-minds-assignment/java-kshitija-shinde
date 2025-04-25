@@ -14,8 +14,8 @@ while implementing an API service for retrieving weather forecasts for a specifi
 1. **Clone the repository:**
 
 ```bash
-    git clone <https://dev.azure.com/PMORGANIZATION/PM-React-Template/_git/PM-JAVA-API-TEMPLATE>
-    cd  PM-JAVA-API-TEMPLATE
+    git clone <https://github.com/parallel-minds-assignment/java-kshitija-apple-assignment>
+  
    ```
     
 
@@ -77,13 +77,15 @@ mvn spring-boot:run
 3. Geocoding Integration:
   - Latitude and longitude for a zip code are fetched using the Nominatim Geocoding API. 
   - Weather is retrieved for the latitude and longitude using the Open-Meteo API, which does not require an API key.
+4. Access Weather API with JWT Authentication :
+  - Run Spring Boot Application
+  - Call the Login API to Get JWT Token(Username = "admin", password = "password123")
+  - Copy the JWT Token.Call the Weather API with Bearer Token
 
 # Development Tips
 1. Code Formatting: Use IntelliJ's built-in code formatter (Ctrl+Alt+L / Cmd+Alt+L)
-2. Code Generation: Use Lombok annotations to reduce boilerplate code.
-3. API Documentation: Access Swagger UI at http://localhost:8080/swagger-ui.html 
-   when the application is running.   //optional
-4. Caching: Weather data for a specific zip code is cached for 15 minutes to minimize requests to the external APIs
+2. Code Generation: Use Lombok annotations to reduce boilerplate code. 
+3. Caching: Weather data for a specific zip code is cached for 15 minutes to minimize requests to the external APIs
 
 # Contributing
 1. Create a new branch for your feature.

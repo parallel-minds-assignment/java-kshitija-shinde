@@ -160,6 +160,12 @@
             <artifactId>mockito-core</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20240303</version> <!-- Latest as of now -->
+        </dependency>
+
     </dependencies>
 
     <build>
